@@ -1,0 +1,19 @@
+{
+  "name": "idoor",
+  "version": "1.0.0",
+  "description": "Ouverture de portes via Discord.",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "author": "gearz",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "child-process": "^1.0.2",
+    "discord.js": "^12.5.3",
+    "fs": "0.0.1-security",
+    "http": "*",
+    "ttn": "^2.3.3"
+  }
+}
