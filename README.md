@@ -1,4 +1,14 @@
 # iDoor
+
+# Fonctionnement
+
+- Télécharger NodeJS
+- Télécharger les modules discordjs, child-process, fs et ttn en executant la commande `npm install discordjs child-process fs ttn`.
+- Inserez le token du bot obtenable sur discord.com/developers dans le fichier config.json à la place de `INSEREZ-LE-TOKEN`.
+- Dans le fichier `open.js` qui se trouve dans le dossier `commands`, remplacer les valeurs des variables `appID`, `accessKey` et `cname` par le votre.
+- Dans le fichier `UCA-ABP_Basic1.ino` qui se trouve dans le dossier `UCA-ABP_Basic1`, remplacer les valeurs des variables `DEVADDR`, `NWKSKEY` et `APPSKEY` par le votre.
+- Executez la commande `node index.js` pour lancer le bot
+
 Le but du Projet est d'emmetre un paquet via Discord et qu'elle soit réceptionné par la carte LoRa en utilisant The Things Network.
 
 Ici, nous avons pris l'exemple d'un entrepreneur basé sur une application du type AirBnB ayant plusieurs logement à louer aux quatre coins de la France. Il serai impossible pour lui de se déplacer chaque jour à chaque logement afin de donner clé au nouveau locataire. L'idée étant qu'on puisse généré une clé digitale qu'on puisse utilisé sur Discord afin d'ouvrir la porte, que ça soit sur le téléphone, sur l'ordinateur, sur la tablette, etc.
