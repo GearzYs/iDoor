@@ -44,9 +44,10 @@ module.exports = {
                         message.channel.send(`Clé reconnu, porte ouverte.`);
                         var appID = "csf"
                         var accessKey = "ttn-account-v2.hDRuu_0CtGOEIkTahersbwyiMgPH31bhkXqKG_AW9CI"
+                        var cname = "reksai"
                         ttn.data(appID, accessKey)
                         .then(function (client) {
-                            client.send("reksai", "11111111111111111111",1)
+                            client.send(cname, "11111111111111111111",1)
                             })
                         .catch(function (error) {
                             console.error("Error", error)
