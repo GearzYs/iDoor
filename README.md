@@ -37,7 +37,8 @@ Chaque fichier dans le dossier « commandes » correspond à une commande. Nous 
 
 Nous allons détailler chaque commandes.
 
-Key 
+# Key
+
 La commande key permet de créer une fiche utilisateur avec la clé. Elle se compose de la manière suivante :
 	!key {durée} {utilisateur}
 La durée se présente sous la forme : chiffre+lettre. Les lettres possibles sont « d » (pour days), « w » (pour weeks) et « m » (pour months). Si nous voulons générer une clé pour 9 semaines, ça serait donc 9w.
@@ -49,7 +50,8 @@ Ainsi, si nous exécutons la commande : « !key 9w @Gearz#2021 » le 11/05/2021 
 {"cle":"eHrs0JTxVYuzCZsYHW6sBBRAHmzq4NHU4maQZFTb235D6fd32V3zUVVAZZszNvW8","temps":"9w","date":1620690330684,"proprietaire":"341297132243910676"}
 
 
-Deletekey
+# Deletekey
+
 La commande deletekey permet de supprimer la fiche utilisateur et donc, la clé. Elle se compose de la manière suivante :
 	!deletekey {utilisateur}
 
@@ -60,11 +62,13 @@ rm est la commande permettant de supprimer un fichier (remove)
 id.json correspond à la fiche utilisateur créée avec !key
 
 
-Sendkey
+# Sendkey
+
 La commande sendkey permet d’envoyer à nouveau la même clé en message privé. Elle se compose de la manière suivante :
 	!sendkey
 
-Open
+# Open
+
 La commande clé permet d’ouvrir la porte en renseignant la bonne clé. Elle se compose de la manière suivante :
 	!open {clé}
 
@@ -74,14 +78,16 @@ Premièrement, la commande vérifie si la date de validité de la clé est toujo
 -	1m = 86400000ms * 30
 Ensuite, nous l’ajoutons à la date de création de la clé et nous vérifions si le résultat est supérieur à la date de l’exécution de la commande !open. Si oui, alors, la clé est expiré et ainsi, le fichier est supprimer et la porte reste fermée. Sinon, elle vérifie si la clé est juste. Si oui, un paquet de 10 bytes est envoyé à The Things Network. Sinon, un message d’erreur est envoyé signalant une clé erronée.
 
-Status
+# Status
+
 La commande status permet d’obtenir les informations de sa fiche utilisateur. Elle se compose de la manière suivante :
 	!status
 
 
-Help
+# Help
+
 La commande help permet d’obtenir la liste de toute les commandes. Elle se compose de la manière suivante :
 	!help	
 
 
-Les commandes en rouges sont exécutables uniquement par le propriétaire des biens et non les autres utilisateurs.
+Les commandes Key et Deletekey sont exécutables uniquement par le propriétaire des biens et non les autres utilisateurs.
