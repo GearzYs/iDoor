@@ -1,5 +1,5 @@
 # iDoor
-This is a school project in french about controlling a real door with discord and arduino.
+This is a project in french about controlling a real door with discord and arduino.
 # Fonctionnement
 
 - Télécharger NodeJS
